@@ -1,0 +1,17 @@
+warm_up_epochs: 0
+embedding_size: 32
+n_layers: 2
+drop_ratio: 0.2
+instance_cnt: 10
+reg_weight: 1e-05
+ssl_weight1: 1e-09
+ssl_weight: 1e-07
+ssl_tau: 0.7
+require_pow: True
+
+dropout: 0.0
+in_feat_dropout: 0
+num_heads: 2
+batch_norm: false
+residual: true
+edge_lr: true

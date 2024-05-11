@@ -1,0 +1,26 @@
+
+NET_SOURCE_ID_FIELD: source_id
+NET_TARGET_ID_FIELD: target_id
+
+load_col:
+    inter: ['user_id', 'item_id', 'rating', 'timestamp']
+    net: [source_id, target_id]
+
+filter_net_by_inter: False
+undirected_net: False
+
+embedding_size: 64
+
+reg_weight: 1e-4
+require_pow: True
+
+lambda: 1e-5
+eps: 0.17
+temperature: 0.05
+
+val_interval:
+    rating: "[5,nf)"
+unused_col:
+    inter: [rating]
+user_inter_num_interval: "[10,inf)"
+item_inter_num_interval: "[10,inf)"

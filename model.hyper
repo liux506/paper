@@ -1,0 +1,3 @@
+n_layers choice [2,3]
+maskrat choice [0.9,0.92,0.94,0.96]
+
